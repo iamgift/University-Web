@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Nunito:wght@900;1000&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+}
+.header {
+  height: 60vh;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6)),
+    url("/CSSFOLDER/Images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: aqua;
+}
+
+.logocontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 100px;
+  padding: 0 30px;
+}
+
+.logocontainer img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.nav-links ul li {
+  list-style-type: none;
+  display: inline;
+  margin: 0 15px;
+}
+.nav-links ul li:hover {
+  border-bottom: 2px solid orange;
+}
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 8px;
+  font-family: "poppins";
+  font-weight: 800;
+}
+
+.navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.navbarcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.text-box {
+  position: relative;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading1 {
+  font-size: 40px;
+  /* padding: 0px 0px 0px 50px 0px; */
+  color: white;
+  /* padding-right: 10px;
+  padding-top: 0;
+  padding-left: 0; */
+  font-family: "poppins";
+  font-weight: 600;
+  margin-bottom: 200px;
+}
+.welcomecontainer {
+  text-align: center;
+}
+.texts {
+  font-size: 10px;
+  color: white;
+  font-family: "Poppins";
+}
+a .button {
+  padding: 3px 25px;
+  background-color: transparent;
+  border: 1px solid #ffffffbd;
+  margin: 20px 0;
+  transition: 1s;
+  font-family: "Poppins";
+}
+.button:hover {
+  background-color: orangered;
+  cursor: pointer;
+}
+
+a .button {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+}
+
+.menu-icon {
+  display: none;
+  color: white;
+  font-size: 25px;
+}
+.menuiconContainer {
+  display: none;
+}
+.mobile-menu {
+  position: absolute;
+  display: none;
+  background-color: rgb(255, 81, 0);
+  height: 100%;
+  width: 50%;
+  right: 0;
+  top: 0;
+}
+.closecontainer {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+  font-size: 24px;
+  color: white;
+  font-family: nunito;
+  font-weight: 900;
+}
+.mobile-menu ul li {
+  list-style-type: none;
+  display: block;
+  padding: 0px 15px;
+  transition: 1s;
+  text-align: center;
+  font-size: 50px;
+}
+
+/* DESCRIPTION */
+.topG {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  /* align-items: flex-start; */
+  padding: 0px 5%;
+  margin: 100px 0px;
+}
+.aboutimg img {
+  width: 100%;
+  object-fit: cover;
+}
+.aboutimg {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+.topG h3 {
+  font-size: 30px;
+}
+.aboutdescription {
+  flex-basis: 40%;
+  margin: 0px 0px;
+}
+.aboutbutton {
+  border: 1px solid orangered;
+  background: transparent;
+  padding: 10px 25px 10px 25px;
+  color: orangered;
+  transition: 1s;
+}
+.aboutbutton:hover {
+  color: white;
+  background-color: orangered;
+  cursor: pointer;
+}
+.aboutspan .aboutbutton {
+  margin-top: 30px;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer h3 {
+  font-weight: 900;
+  font-family: "poppins";
+  font-size: 20px;
+}
+.parax {
+  font-family: "poppins";
+  font-size: 15px;
+  text-align: center;
+  color: gray;
+  margin-bottom: 10px;
+}
+.socialicons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.fa-brands {
+  padding: 0px 10px;
+  color: rgb(201, 5, 5);
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.end {
+  font-family: "poppins";
+  text-align: center;
+  margin-bottom: 20px;
+  color: gray;
+}
+
+@media (max-width: 700px) {
+  .menuiconContainer {
+    display: block;
+  }
+  .nav-links ul li {
+    display: none;
+  }
+  .menu-icon {
+    padding: 0px 30px;
+  }
+  .menuiconContainer {
+    display: block;
+  }
+  .heading1 {
+    font-size: 24px;
+    padding: 0px 10px;
+    color: white;
+    font-family: "poppins";
+    font-weight: 600;
+  }
+  .texts {
+    font-size: 12px;
+    color: white;
+    font-family: "Poppins";
+  }
+  .button a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .nav-links ul li {
+    display: none;
+  }
+  .menu-icon {
+    padding: 0px 30px;
+  }
+  .menuiconContainer {
+    display: block;
+  }
+  .logocontainer {
+    width: 110px;
+    height: 100px;
+  }
+  .campcontainer {
+    grid-template-columns: auto;
+    row-gap: 20px;
+    justify-content: center;
+    padding: 0px 30px;
+  }
+  .imagescontainer {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0px;
+    padding: 0px 30px;
+  }
+  .minidetails {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .row {
+    width: 300px;
+    margin: 10px 0;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .course {
+    width: 100%;
+    margin: 0px;
+    padding: 15px 0;
+  }
+  .row:hover {
+    box-shadow: 5px 5px 12px 5px rgb(199, 199, 199);
+    cursor: pointer;
+  }
+  .library {
+    width: fit-content;
+    padding: 0px 0px;
+    line-height: 1.5;
+  }
+  .studentsopinion {
+    display: grid;
+    justify-content: space-around;
+  }
+  .opinion2 {
+    margin: 0px 10px 0px 10px;
+    width: auto;
+  }
+  .img2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  .colordiv h3 {
+    font-size: 15px;
+  }
+  .hello {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .contactcontainer {
+    padding: 0px;
+    height: 50vh;
+  }
+  /* FOOTER */
+  .footer h3 {
+    margin-top: 35px;
+  }
+  .topG{
+    display: block;
+  }
+.aboutdescription h3{
+  font-size: 35px;
+  text-align: center;
+  line-height: 1.5;
+}
+.aboutdescription p{
+  text-align: center;
+  
+}
+.aboutbutton{
+  margin-left: 100px;
+}
+.aboutimg img{
+    
+    width: 300px;
+    margin-top: 50px;
+    background-color: palevioletred;
+}
+.aboutimg{
+  width: 100%;
+}
+.topG{
+  margin: 50px 0px;
+}
+}
+
